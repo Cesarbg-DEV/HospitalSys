@@ -1,0 +1,26 @@
+{
+  "name": "hospitalsys",
+  "version": "1.0.0",
+  "description": "Hospital System",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikelhl/HospitalSys.git"
+  },
+  "keywords": [
+    "api",
+    "rest"
+  ],
+  "author": "Enrique Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kikelhl/HospitalSys/issues"
+  },
+  "homepage": "https://github.com/kikelhl/HospitalSys#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
