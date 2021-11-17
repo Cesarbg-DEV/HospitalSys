@@ -1,0 +1,76 @@
+{
+    "staff": [
+        {
+            "id": 1,
+            "num": "001",
+            "name": "Carlos Enrique Gutierrez Marquez",
+            "job": "accountant"
+        },
+        {
+            "id": 2,
+            "num": "002",
+            "name": "Luis Camilo Fernandez Ceballos",
+            "job": "accountant"
+        },
+        {
+            "id": 3,
+            "num": "003",
+            "name": "Andres Manuel Lopez Obreador",
+            "job": "accountant"
+        },
+        {
+            "id": 4,
+            "num": "004",
+            "name": "Enrique Peña Nieto",
+            "job": "accountant"
+        },
+        {
+            "id": 5,
+            "num": "005",
+            "name": "Alejandro Castro Guzman",
+            "job": "accountant"
+        },
+        {
+            "id": 6,
+            "num": "006",
+            "name": "Marc Segui Shein",
+            "job": "accountant"
+        },
+        {
+            "id": 7,
+            "num": "007",
+            "name": "Kim Kardashian West",
+            "job": "accountant"
+        },
+        {
+            "id": 8,
+            "num": "008",
+            "name": "Travieso Arce Scott",
+            "job": "accountant"
+        },
+        {
+            "id": 9,
+            "num": "009",
+            "name": "Victor Lagos Ramirez",
+            "job": "accountant"
+        },
+        {
+            "id": 10,
+            "num": "010",
+            "name": "Alejandro Castro Guzman",
+            "job": "accountant"
+        },
+        {
+            "id": 11,
+            "num": "011",
+            "name": "Danny Ocean Cortes",
+            "job": "accountant"
+        },
+        {
+            "id": 12,
+            "num": "012",
+            "name": "Alejandro Spitzer Esposito",
+            "job": "accountant"
+        }
+    ]
+}
