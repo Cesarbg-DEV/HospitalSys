@@ -1,9 +1,9 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const pacientes = express.Router();
+const personal = express.Router();
 const db = require('../config/database');
 
-pacientes.post("/signin", async (req, res, next) => {
+personal.post("/signin", async (req, res, next) => {
     const {p_name, p_email, p_password} = req.body;
     
     if (p_name && p_email && p_password) {
@@ -21,8 +21,8 @@ pacientes.post("/signin", async (req, res, next) => {
     return res.status(500).json({ code: 500, message: "Campos incompletos" });
 });
 
-pacientes.post("/login", async (req, res, next) => {
-    const { p_email, p_password } = req.body;
+personal.post("/login", async (req, res, next) => {
+    const { p_email, p_password} = req.body;
     const query = `SELECT * from personal WHERE p_email = '${p_email}' AND p_password = '${p_password}';`;
     const rows = await db.query(query);
 
@@ -35,15 +35,15 @@ pacientes.post("/login", async (req, res, next) => {
             return res.status(200).json({code: 200, message: token});
         }
         else {
-            return res.status(401).json({code: 401, message: "Usuario Y/O contraseña incorrectos"});
+            return res.status(200).json({code: 401, message: "Usuario Y/O contraseña incorrectos"});
         }
     }
     return res.status(401).json({code: 500, message: "Campos incompletos"});   
 });
 
-pacientes.get('/', async(req, res, next) => {
+personal.get('/', async(req, res, next) => {
     const usr = await db.query("SELECT * FROM personal");
     return res.status(200).json({code: 200, message: usr });
 });
 
-module.exports = pacientes ;
+module.exports = personal;

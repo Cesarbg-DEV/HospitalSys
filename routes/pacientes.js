@@ -68,14 +68,14 @@ pacientes.patch('/:pat_id([0-9]{1,3})', async (req, res, next) => {
 
 
 pacientes.get('/', async(req, res, next) => {
-    const st = await db.query("SELECT * FROM pacientes ");
+    const st = await db.query("SELECT * FROM `personal`;");
     return res.status(200).json({code: 200, message: st });
 });
 
 pacientes.get('/:pat_id([0-9]{1,3})', async (req, res, next) => {
     const pat_id = req.params.pat_id;
     if (pat_id >= 1 && pat_id <= 2) {
-        const st = await db.query("SELECT * FROM pacientes  WHERE pat_id = "+pat_id+";")
+        const st = await db.query("SELECT * FROM pacientes  WHERE id = "+pat_id+";")
         return res.status(200).json({code: 200, message: st})
     }
     return res.status(404).json({code: 404, message: "Usuario no encontrado"});
