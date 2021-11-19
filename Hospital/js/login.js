@@ -12,9 +12,6 @@ function init() {
     else {
         window.location.href = "pacientes.html";
     }
-
-
-    
 }
 
 
